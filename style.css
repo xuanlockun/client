@@ -1,14 +1,14 @@
 :root {
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-  color: #172026;
-  background: #f7f8f4;
+  color: #181713;
+  background: #fbfaf6;
   --accent: #00ff62;
-  --line: #d9ddd5;
-  --muted: #5d675f;
+  --line: #ded9cd;
+  --muted: #696356;
 }
 
 * { box-sizing: border-box; }
-body { margin: 0; }
+body { margin: 0; background: #fbfaf6; }
 a { color: inherit; }
 
 .site-header {
@@ -20,7 +20,7 @@ a { color: inherit; }
   justify-content: space-between;
   gap: 24px;
   padding: 16px max(24px, calc((100vw - 1100px) / 2));
-  background: rgba(247, 248, 244, 0.94);
+  background: rgba(251, 250, 246, 0.94);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(12px);
 }
@@ -31,11 +31,11 @@ a { color: inherit; }
 .site-nav a { color: #334039; text-decoration: none; }
 .site-nav .nav-cta { color: #fff; background: var(--accent); border-radius: 6px; padding: 9px 12px; }
 
-main { width: min(1100px, calc(100vw - 32px)); margin: 0 auto; }
-.hero { display: grid; align-items: end; min-height: 54vh; padding: 72px 0 44px; border-bottom: 1px solid var(--line); }
+main { width: min(1060px, calc(100vw - 32px)); margin: 0 auto; }
+.hero { display: grid; align-items: end; min-height: 48vh; padding: 76px 0 44px; border-bottom: 2px solid #181713; }
 .eyebrow { color: var(--accent); font-weight: 800; margin: 0 0 10px; }
-h1 { font-size: clamp(42px, 7vw, 82px); line-height: 0.95; margin: 0 0 18px; letter-spacing: 0; max-width: 880px; }
-.hero p:not(.eyebrow) { color: var(--muted); font-size: 20px; line-height: 1.6; max-width: 720px; }
+h1 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(46px, 8vw, 92px); line-height: 0.93; margin: 0 0 18px; letter-spacing: 0; max-width: 900px; }
+.hero p:not(.eyebrow) { color: var(--muted); font-size: 21px; line-height: 1.65; max-width: 700px; }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 24px; }
 .button { display: inline-flex; align-items: center; min-height: 42px; padding: 10px 14px; border-radius: 6px; background: var(--accent); color: #fff; text-decoration: none; font-weight: 700; }
 .button.secondary { background: transparent; color: #172026; border: 1px solid var(--line); }
@@ -43,12 +43,12 @@ h1 { font-size: clamp(42px, 7vw, 82px); line-height: 0.95; margin: 0 0 18px; let
 .post-section { padding: 38px 0 58px; }
 .section-head { margin-bottom: 18px; }
 .section-head h2 { margin: 0; font-size: 32px; }
-.post-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
-.post-card { border: 1px solid var(--line); border-radius: 8px; background: #fff; overflow: hidden; }
+.post-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.post-card { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #fff; overflow: hidden; }
 .post-card a { display: grid; gap: 10px; height: 100%; padding: 16px; text-decoration: none; }
 .post-card img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 6px; }
 .post-card span, .meta { color: var(--muted); font-size: 13px; }
-.post-card h2 { margin: 0; font-size: 22px; }
+.post-card h2 { margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: 25px; line-height: 1.1; }
 .post-card p { margin: 0; color: var(--muted); line-height: 1.55; }
 
 .article-shell { width: min(820px, calc(100vw - 32px)); }
