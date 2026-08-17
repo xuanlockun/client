@@ -1,0 +1,71 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  color: #172026;
+  background: #f6f7f4;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: #245c6f;
+}
+
+.home,
+.post-page {
+  width: min(900px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.home header {
+  border-bottom: 1px solid #d9ddd5;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-size: clamp(34px, 6vw, 64px);
+  line-height: 1;
+  margin: 0 0 12px;
+}
+
+.post-list {
+  display: grid;
+  gap: 14px;
+}
+
+.post-card {
+  border-bottom: 1px solid #d9ddd5;
+  padding: 8px 0 18px;
+}
+
+.post-card h2 {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+
+.post-card p {
+  color: #46514a;
+  margin: 0 0 8px;
+}
+
+.post-card small,
+.meta {
+  color: #69736b;
+}
+
+.post-page article {
+  margin-top: 28px;
+}
+
+.post-page article :where(p, li) {
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.post-page img {
+  max-width: 100%;
+  height: auto;
+}
