@@ -3,31 +3,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bảo Bảo</title>
+  <title>Static CMS</title>
+  <meta name="description" content="Published notes and articles.">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="home">
-    <header class="hero">
-      <p class="eyebrow">Bảo Bảo</p>
-      <h1>Bảo Bảo</h1>
-      <p>Tin tức và tuyển dụng</p>
-    </header>
-    <section class="intro">
-      <p>Welcome to the site.</p>
+  <header class="site-header">
+    <a class="brand" href="./">Static CMS</a>
+    <nav class="site-nav"></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Bảo Bảo</p>
+        <h1>Bảo Bảo</h1>
+        <p>Tin tức và tuyển dụng</p>
+        <div class="hero-actions">
+          <a class="button" href="#latest">Read latest</a>
+          
+        </div>
+      </div>
     </section>
-    <section class="post-list">
-      <article class="post-card">
-  <h2><a href="posts/mot-buoi-sang-khong-co-internet/">Một buổi sáng không có Internet</a></h2>
-  <p>Một thử nghiệm nhỏ để khám phá cuộc sống sẽ thay đổi thế nào khi chúng ta tạm rời xa Internet.</p>
-  <small>17/8/2026</small>
+    <section class="intro"><p>Welcome to the site.</p></section>
+    <section class="post-section">
+      <div class="section-head">
+        <p class="eyebrow">Latest</p>
+        <h2>Published articles</h2>
+      </div>
+      <div class="post-grid"><article class="post-card">
+  <a href="posts/mot-buoi-sang-khong-co-internet/">
+    
+    <span>17/8/2026</span>
+    <h2>Một buổi sáng không có Internet</h2>
+    <p>Một thử nghiệm nhỏ để khám phá cuộc sống sẽ thay đổi thế nào khi chúng ta tạm rời xa Internet.</p>
+  </a>
 </article>
 <article class="post-card">
-  <h2><a href="posts/a/">a</a></h2>
-  <p>b</p>
-  <small>17/8/2026</small>
-</article>
+  <a href="posts/a/">
+    
+    <span>17/8/2026</span>
+    <h2>a</h2>
+    <p>b</p>
+  </a>
+</article></div>
     </section>
+    
   </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>&copy; 2026 Bảo Bảo</div>
+      <nav class="footer-links"></nav>
+    </div>
+  </footer>
 </body>
 </html>
